@@ -1,7 +1,8 @@
 Ansible Role: postgres-slave-init 
 ======================================
 
-[![Build Status](https://travis-ci.org/entercloudsuite/ansible-postgres-slave-init.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-postgres-slave-init)
+
+[![Build Status](https://travis-ci.org/entercloudsuite/ansible-postgres.svg?branch=master)](https://travis-ci.org/entercloudsuite/postgres-slave-init)
 [![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.postgres-slave-init-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/postgres-slave-init)  
 
 Installs postgres-slave-init on Ubuntu 16.04 (Xenial)
@@ -20,7 +21,12 @@ Run with default vars:
 
     - hosts: all
       roles:
-        - { role: ansible-postgres-slave-init }
+        - role: ansible-postgres-slave-init
+          postgresql_master: postgres.service.automium.consul
+          postgresql_replica_user: replica
+          postgresql_replica_password: yoursupersecretpassword
+
+full example here https://github.com/jsecchiero/ansible-postgresql-slave-init
 
 ## Testing
 
