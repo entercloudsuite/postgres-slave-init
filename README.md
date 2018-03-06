@@ -3,7 +3,7 @@ Ansible Role: postgres-slave-init
 
 
 [![Build Status](https://travis-ci.org/entercloudsuite/ansible-postgres.svg?branch=master)](https://travis-ci.org/entercloudsuite/postgres-slave-init)
-[![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.postgres-slave-init-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/postgres-slave-init)  
+[![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.postgres--slave--init-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/postgres-slave-init)
 
 Installs postgres-slave-init on Ubuntu 16.04 (Xenial)
 
