@@ -15,4 +15,3 @@ galaxy_info:
 dependencies:
   - {role: jsecchiero.postgresql-slave-init, version: 1.0.2}
   # List your role dependencies here, one per line.
-

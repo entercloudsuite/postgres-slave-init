@@ -11,7 +11,8 @@ services:
 install:
   - pip install tox-travis
 
-# Test all the scenarios against the Ansible versions defined in the tox.ini file
+# Test all the scenarios against the Ansible
+# versions defined in the tox.ini file
 script:
   - tox
 
@@ -21,4 +22,5 @@ notifications:
 # TODO: this should run once
 before_deploy:
   - pip install ansible==2.4
-  - ansible-galaxy install --force --roles-path . -r ./molecule/default/requirements.yml
+  - ansible-galaxy install --force --roles-path . -r \
+    ./molecule/default/requirements.yml
