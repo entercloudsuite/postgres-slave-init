@@ -1,0 +1,24 @@
+---
+package:
+  postgres-slave-init:
+    installed: true
+port:
+  tcp:5432:
+    listening: true
+    ip:
+      - 0.0.0.0
+service:
+  postgres-slave-init:
+    enabled: true
+    running: true
+user:
+  postgres-slave-init:
+    exists: true
+    groups:
+      - postgres-slave-init
+group:
+  postgres-slave-init:
+    exists: true
+process:
+  postgres-slave-init:
+    running: true
