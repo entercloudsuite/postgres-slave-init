@@ -1,4 +1,8 @@
 ---
+services: docker
+
+env:
+  - distro: ubuntu1604
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
